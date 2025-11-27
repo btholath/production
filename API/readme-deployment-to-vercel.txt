@@ -35,3 +35,11 @@ Vercel CLI 48.11.0
 ❗️  Due to `builds` existing in your configuration file, the Build and Development Settings defined in your Project Settings will not apply. Learn More: https://vercel.link/unused-build-settings
 (venv) bijut@b:~/aws_apps/production/API$
 ==========================================================================
+Set the OPENAI_API_KEY in Vercel
+==========================================================================
+(venv) bijut@b:~/aws_apps/production/API$
+echo $OPENAI_API_KEY
+export OPENAI_API_KEY="your_real_key_here"
+echo $OPENAI_API_KEY
+
+vercel env add OPENAI_API_KEY
